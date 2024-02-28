@@ -7,9 +7,7 @@ export const Layout= () => {
   return (
     <>
         <Header/>
-        <Outlet/> //upar aur niche 
-        ki do cheeze same rahegi 
-        Outlet change hota rahega
+        <Outlet/> 
         <Footer/>
     </>
   )
