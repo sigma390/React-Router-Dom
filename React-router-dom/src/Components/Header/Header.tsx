@@ -92,7 +92,7 @@ export const Header = () => {
                                             hover:bg-gray-50
                                              lg:hover:bg-transparent
                                               lg:border-0 hover:text-orange-700
-                                               lg:p-0`} to={'https://github.com/sigma390'}>
+                                               lg:p-0`} to='/github'>
                                     Github
                                 </NavLink>
                             </li>
