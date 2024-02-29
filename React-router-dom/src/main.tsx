@@ -9,7 +9,8 @@ import { About } from './Components/About/About.tsx'
 import Home from './Components/Home/Home.tsx'
 import { Contact } from './Components/Contact/Contact.tsx'
 import { User } from './Components/User/User.tsx'
-import { Github } from './Components/Github/Github.tsx'
+import { Github, githubLoader } from './Components/Github/Github.tsx'
+
 
 //================> 1ST WAY <=====================
 // const router = createBrowserRouter([{
@@ -43,7 +44,11 @@ const router = createBrowserRouter(
         <Route path='/contact' element={<Contact/>}/>
         {/* //Dynamic Routing */}
         <Route path='/User/:Id' element={<User/>}/>
-        <Route path='/github' element={<Github/>}/>
+        <Route
+        loader={githubLoader}
+         path='/github'
+         element={<Github/>}
+         />
 
 
     </Route>
