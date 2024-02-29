@@ -8,6 +8,7 @@ import { Layout } from './Layout.tsx'
 import { About } from './Components/About/About.tsx'
 import Home from './Components/Home/Home.tsx'
 import { Contact } from './Components/Contact/Contact.tsx'
+import { User } from './Components/User/User.tsx'
 
 //================> 1ST WAY <=====================
 // const router = createBrowserRouter([{
@@ -40,8 +41,9 @@ const router = createBrowserRouter(
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         {/* //Dynamic Routing */}
+        <Route path='/User/:Id' element={<User/>}/>
 
-        
+
     </Route>
   )
 )
